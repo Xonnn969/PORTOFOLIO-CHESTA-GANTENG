@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Chesta Sitorus">
+  <title>Chesta Sitorus Portofolio</title>
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Reading Progress Bar -->
+  <div class="scroll-progress-bar" id="scrollProgressBar" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="navbar-wrapper">
+    <nav class="navbar container" id="mainNavbar" aria-label="Navigasi Utama">
+      <a href="#beranda" class="logo" id="brandLogo">
+        <span class="logo-mark">CS</span>
+        <span class="logo-text">Chesta<span class="logo-text-sub">Sitorus</span></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+        <li><a href="#keahlian" class="nav-link">Keahlian</a></li>
+        <li><a href="#pendidikan" class="nav-link">Pendidikan</a></li>
+        <li><a href="#kontak" class="nav-link">Kontak</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Ganti mode tampilan terang atau gelap"
+          title="Ganti Mode Tampilan">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#kontak" class="btn btn-primary btn-sm nav-cta-btn" id="navContactCta">
+          <span>Mari Terhubung</span>
+        </a>
+
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Buka menu navigasi mobile"
+          aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="beranda">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="status-indicator">
+            <span class="status-dot"></span>
+            <span class="status-text">Terbuka untuk Kolaborasi</span>
+          </div>
+
+          <h1 class="hero-title">
+            Mngembangkan Teknologi &amp; Perangkat Lunak yang Bersih, Andal, dan Berdampak untuk Negeri.
+          </h1>
+
+          <p class="hero-description">
+            Halo, saya <strong>Chesta Sitorus</strong>. Saat ini menempuh studi di <strong>Telkom University</strong>
+            dengan fokus pada perancangan antarmuka web modern, pengembangan backen, serta
+            rekayasa solusi digital yang fungsional.
+          </p>
+
+          <div class="hero-meta-row">
+            <div class="meta-tag">
+              <span class="meta-label">Institusi</span>
+              <span class="meta-value">Telkom University</span>
+            </div>
+            <div class="meta-divider" aria-hidden="true"></div>
+            <div class="meta-tag">
+              <span class="meta-label">Fokus Utama</span>
+              <span class="meta-value">Web &amp; Software Dev</span>
+            </div>
+            <div class="meta-divider" aria-hidden="true"></div>
+            <div class="meta-tag">
+              <span class="meta-label">Lokasi</span>
+              <span class="meta-value">Bandung / Jakarta</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#kontak" class="btn btn-primary" id="heroContactBtn">
+              <span>Hubungi Saya</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#keahlian" class="btn btn-outline" id="heroSkillsBtn">
+              <span>Eksplorasi Keahlian</span>
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <span class="social-label">Kanal Profesional:</span>
+            <div class="social-links-list">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-badge"
+                title="GitHub Chesta Sitorus" aria-label="Kunjungi profil GitHub">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg>
+                <span>GitHub</span>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-badge"
+                title="LinkedIn Chesta Sitorus" aria-label="Kunjungi profil LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://www.instagram.com/chetayoo?stkn=YjF2NXUxbnB2bHVz" target="_blank"
+                rel="noopener noreferrer" class="social-badge" title="Instagram Chesta Sitorus"
+                aria-label="Kunjungi profil Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+                <span>Instagram</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="portrait-card">
+            <div class="portrait-image-wrapper">
+              <img src="assets/images/chesta keren.jpeg" alt="Foto Profil Chesta Sitorus" class="portrait-img"
+                width="380" height="380" loading="eager">
+            </div>
+            <div class="portrait-details">
+              <div class="portrait-name">Chesta Mahardika Fadilla Sitorus</div>
+              <div class="portrait-caption">Telkom University <br> Teknlogi Informasi</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="keahlian">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Kemampuan Teknis</span>
+          <h2 class="section-title">Keahlian &amp; Ekosistem Pengembangan</h2>
+          <p class="section-desc">Kumpulan bahasa pemrograman, framework, dan peralatan yang saya terapkan dalam
+            membangun antarmuka web serta arsitektur backend yang tangguh.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Card 1: Frontend -->
+          <div class="skill-category-card">
+            <div class="category-top">
+              <div class="category-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-heading">Frontend Engineering</h3>
+                <p class="category-sub">Struktur semantik, tata letak responsif, dan interaktivitas dinamis.</p>
+              </div>
+            </div>
+
+            <div class="category-tags-list">
+              <span class="skill-badge highlight">JavaScript (ES6+)</span>
+              <span class="skill-badge highlight">CSS3 &amp; Flexbox/Grid</span>
+              <span class="skill-badge">HTML5 Semantik</span>
+              <span class="skill-badge">React JS</span>
+              <span class="skill-badge">Vue JS</span>
+              <span class="skill-badge">Responsive Design</span>
+              <span class="skill-badge">DOM Manipulation</span>
+              <span class="skill-badge">Web Accessibility (a11y)</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Backend -->
+          <div class="skill-category-card">
+            <div class="category-top">
+              <div class="category-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-heading">Backend &amp; Arsitektur Data</h3>
+                <p class="category-sub">Logika server, perancangan basis data, dan pengelolaan data relasional.</p>
+              </div>
+            </div>
+
+            <div class="category-tags-list">
+              <span class="skill-badge highlight">PHP</span>
+              <span class="skill-badge highlight">Laravel</span>
+              <span class="skill-badge">MySQL</span>
+              <span class="skill-badge">Python</span>
+              <span class="skill-badge">Golang</span>
+              <span class="skill-badge">CodeIgniter</span>
+              <span class="skill-badge">REST API</span>
+              <span class="skill-badge">Database Normalization</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Tools & Foundation -->
+          <div class="skill-category-card">
+            <div class="category-top">
+              <div class="category-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <path
+                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                  </path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-heading">Peralatan &amp; Fondasi Rekayasa</h3>
+                <p class="category-sub">Workflow kolaborasi kode, manajemen versi, dan metodologi pengembangan.</p>
+              </div>
+            </div>
+
+            <div class="category-tags-list">
+              <span class="skill-badge highlight">Git &amp; GitHub</span>
+              <span class="skill-badge">Android Studio</span>
+              <span class="skill-badge">Java</span>
+              <span class="skill-badge">Problem Solving</span>
+              <span class="skill-badge">Web Performance</span>
+              <span class="skill-badge">Cross-Browser Testing</span>
+              <span class="skill-badge">Clean Code Principles</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="overview-chips-card">
+          <span class="overview-title">Ringkasan Stack Inti:</span>
+          <div class="chips-container">
+            <span class="tech-chip">PHP</span>
+            <span class="tech-chip">Laravel</span>
+            <span class="tech-chip">JavaScript</span>
+            <span class="tech-chip">MySQL</span>
+            <span class="tech-chip">Python</span>
+            <span class="tech-chip">Golang</span>
+            <span class="tech-chip">HTML5 / CSS3</span>
+            <span class="tech-chip">Git</span>
+            <span class="tech-chip">React JS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION / TIMELINE SECTION -->
+    <section class="section timeline-section" id="pendidikan">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Riwayat Akademik</span>
+          <h2 class="section-title">Pendidikan Formal</h2>
+          <p class="section-desc">Jejak perjalanan pendidikan dalam memperkuat fondasi logika pemrograman, rekayasa
+            perangkat lunak, dan teknologi informasi.</p>
+        </div>
+
+        <div class="timeline-list">
+          <!-- Item 1: Telkom -->
+          <article class="timeline-card">
+            <div class="timeline-card-header">
+              <div class="timeline-institution">
+                <img src="assets/images/logo_telkom.png" alt="Logo Resmi Telkom University" class="institution-logo"
+                  width="36" height="36" loading="lazy">
+                <div>
+                  <h3 class="institution-name">Telkom University</h3>
+                  <p class="degree-title">S1 Teknologi Informasi</p>
+                </div>
+              </div>
+              <div class="timeline-period-badge">
+                <span>2026 - Sekarang</span>
+              </div>
+            </div>
+            <div class="timeline-card-body">
+              <p class="timeline-card-desc">
+                Mempelajari struktur arsitektur sistem informasi, dasar algoritma lanjutan, rekayasa perangkat lunak
+                skala enterprise, jaringan komputer, dan keamanan sistem. Membangun pemahaman komprehensif dalam
+                menerjemahkan kebutuhan teknologi menjadi solusi nyata.
+              </p>
+              <div class="timeline-focus-tags">
+                <span class="focus-tag">Arsitektur Perangkat Lunak</span>
+                <span class="focus-tag">Jaringan &amp; Sistem Informasi</span>
+                <span class="focus-tag">Struktur Data &amp; Algoritma</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 2: SMK Tunas Bangsa -->
+          <article class="timeline-card">
+            <div class="timeline-card-header">
+              <div class="timeline-institution">
+                <img src="assets/images/logo tb new.jpeg" alt="Logo SMK F. Tunas Bangsa" class="institution-logo"
+                  width="36" height="36" loading="lazy">
+                <div>
+                  <h3 class="institution-name">SMK F. Tunas Bangsa</h3>
+                  <p class="degree-title">Rekayasa Perangkat Lunak (RPL)</p>
+                </div>
+              </div>
+              <div class="timeline-period-badge">
+                <span>2023 - 2026</span>
+              </div>
+            </div>
+            <div class="timeline-card-body">
+              <p class="timeline-card-desc">
+                Menyelesaikan pendidikan kejuruan dengan konsentrasi Rekayasa Perangkat Lunak. Mempelajari logika
+                pemrograman terstruktur, pembuatan website dinamis dengan PHP &amp; MySQL, serta dasar-dasar aplikasi
+                mobile dan basis data.
+              </p>
+              <div class="timeline-focus-tags">
+                <span class="focus-tag">Rekayasa Web (PHP/MySQL)</span>
+                <span class="focus-tag">Pemrograman Berorientasi Objek</span>
+                <span class="focus-tag">Praktik Pembuatan Perangkat Lunak</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="kontak">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Mulai Diskusi</span>
+          <h2 class="section-title">Hubungi Saya</h2>
+          <p class="section-desc">Apakah Anda memiliki proyek kolaborasi, penawaran magang, atau ingin bertukar pikiran
+            seputar teknologi web? Jangan ragu untuk mengirimkan pesan.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Direct Info Cards -->
+          <div class="contact-cards-column">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=chestamahardikafadillasitorus@gmail.com"
+              target="_blank" rel="noopener noreferrer" class="contact-info-card" id="directEmailCard">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-card-label">Email Langsung</span>
+                <span class="contact-card-value">chestamahardikafadillasitorus@gmail.com</span>
+                <span class="contact-card-action">Buka Gmail untuk menulis pesan &nearr;</span>
+              </div>
+            </a>
+
+            <div class="contact-info-card static-card">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-card-label">Lokasi Domisili</span>
+                <span class="contact-card-value">Bandung / Jakarta, Indonesia</span>
+                <span class="contact-card-action">Tersedia untuk kerja daring (Remote) maupun Hybrid</span>
+              </div>
+            </div>
+
+            <a href="https://www.instagram.com/chetayoo?stkn=YjF2NXUxbnB2bHVz" target="_blank" rel="noopener noreferrer"
+              class="contact-info-card" id="instagramCard">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-card-label">Pesan Sosial (Instagram)</span>
+                <span class="contact-card-value">@Chetayoo</span>
+                <span class="contact-card-action">Kirim DM melalui Instagram &nearr;</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Right: Contact Form -->
+          <div class="contact-form-card">
+            <form id="contactForm" class="contact-form" action="https://formsubmit.co/u.coba1108@gmail.com"
+              method="POST" novalidate>
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_next" id="formNextUrl" value="">
+
+              <div class="form-fields-grid">
+                <div class="form-field">
+                  <label for="userName" class="field-label">Nama Lengkap <span class="required-mark"
+                      aria-hidden="true">*</span></label>
+                  <input type="text" id="userName" name="name" class="field-input" placeholder="Contoh: Rizky" required
+                    autocomplete="name">
+                  <span class="field-error" id="nameError" role="alert">Nama lengkap wajib diisi</span>
+                </div>
+
+                <div class="form-field">
+                  <label for="userEmail" class="field-label">Alamat Email <span class="required-mark"
+                      aria-hidden="true">*</span></label>
+                  <input type="email" id="userEmail" name="email" class="field-input" placeholder="nama@gmail.com"
+                    required autocomplete="email">
+                  <span class="field-error" id="emailError" role="alert">Format email tidak valid</span>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="userSubject" class="field-label">Subjek Pembahasan</label>
+                <input type="text" id="userSubject" name="_subject" class="field-input"
+                  placeholder="Tawaran Kolaborasi / Pertanyaan Proyek">
+              </div>
+
+              <div class="form-field">
+                <label for="userMessage" class="field-label">Isi Pesan <span class="required-mark"
+                    aria-hidden="true">*</span></label>
+                <textarea id="userMessage" name="message" class="field-input field-textarea" rows="5"
+                  placeholder="Tuliskan ide, tawaran kerja, atau pertanyaan Anda..." required></textarea>
+                <span class="field-error" id="messageError" role="alert">Pesan wajib diisi (minimal 10 karakter)</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit" id="submitFormBtn">
+                <span class="btn-text">Kirim Pesan Sekarang</span>
+                <span class="btn-spinner" id="formSpinner" aria-hidden="true"></span>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <a href="#beranda" class="logo">
+          <span class="logo-mark">CS</span>
+          <span class="logo-text">Chesta<span class="logo-text-sub">Sitorus</span></span>
+        </a>
+      </div>
+
+      <div class="footer-links-group">
+        <ul class="footer-links">
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#keahlian">Keahlian</a></li>
+          <li><a href="#pendidikan">Pendidikan</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-group">
+        <ul class="footer-links">
+          <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub Profil</a></li>
+          <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn Koneksi</a></li>
+          <li><a href="https://www.instagram.com/chetayoo?stkn=YjF2NXUxbnB2bHVz" target="_blank"
+              rel="noopener noreferrer">Instagram (@Chetayoo)</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="Kembali ke atas halaman" title="Kembali ke atas">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+      stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Mobile Quick Action Sheet / Drawer -->
+  <div class="mobile-sheet-backdrop" id="mobileSheetBackdrop" aria-hidden="true"></div>
+  <aside class="mobile-sheet" id="mobileSheet" aria-label="Menu Cepat Navigasi Mobile" aria-hidden="true">
+    <div class="mobile-sheet-header">
+      <div class="sheet-drag-handle" aria-hidden="true"></div>
+      <button class="sheet-close-btn" id="mobileSheetCloseBtn" aria-label="Tutup Menu">&times;</button>
+    </div>
+
+    <div class="mobile-sheet-profile">
+      <div class="sheet-avatar">
+        <img src="assets/images/chesta keren.jpeg" alt="Chesta Sitorus" width="56" height="56">
+      </div>
+      <div class="sheet-profile-info">
+        <h3 class="sheet-name">Chesta Sitorus</h3>
+        <p class="sheet-role">S1 Teknologi Informasi • Telkom University</p>
+      </div>
+    </div>
+
+    <div class="sheet-section-title">Aksi &amp; Kontak Cepat</div>
+    <div class="sheet-actions-grid">
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=chestamahardikafadillasitorus@gmail.com" target="_blank"
+        rel="noopener noreferrer" class="sheet-action-card">
+        <span class="sheet-action-icon">📧</span>
+        <div class="sheet-action-text">
+          <strong>Email Gmail</strong>
+          <span>Kirim pesan langsung</span>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/chetayoo?stkn=YjF2NXUxbnB2bHVz" target="_blank" rel="noopener noreferrer"
+        class="sheet-action-card">
+        <span class="sheet-action-icon">💬</span>
+        <div class="sheet-action-text">
+          <strong>Instagram DM</strong>
+          <span>@Chetayoo</span>
+        </div>
+      </a>
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="sheet-action-card">
+        <span class="sheet-action-icon">🐙</span>
+        <div class="sheet-action-text">
+          <strong>GitHub</strong>
+          <span>Repositori kode</span>
+        </div>
+      </a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="sheet-action-card">
+        <span class="sheet-action-icon">💼</span>
+        <div class="sheet-action-text">
+          <strong>LinkedIn</strong>
+          <span>Koneksi profesional</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="sheet-footer">
+      <button class="sheet-theme-btn" id="sheetThemeToggleBtn">
+        <span class="sheet-theme-icon">🌓</span>
+        <span class="sheet-theme-text">Ganti Mode Tampilan (Terang / Gelap)</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Mobile Bottom Navigation Bar -->
+  <nav class="mobile-bottom-nav" id="mobileBottomNav" aria-label="Navigasi Bawah Mobile">
+    <a href="#beranda" class="mobile-nav-item active" data-section="beranda" id="mobNavBeranda">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" aria-hidden="true">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+      </svg>
+      <span>Beranda</span>
+    </a>
+    <a href="#keahlian" class="mobile-nav-item" data-section="keahlian" id="mobNavKeahlian">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" aria-hidden="true">
+        <polyline points="16 18 22 12 16 6"></polyline>
+        <polyline points="8 6 2 12 8 18"></polyline>
+      </svg>
+      <span>Keahlian</span>
+    </a>
+    <a href="#pendidikan" class="mobile-nav-item" data-section="pendidikan" id="mobNavPendidikan">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" aria-hidden="true">
+        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+      </svg>
+      <span>Pendidikan</span>
+    </a>
+    <a href="#kontak" class="mobile-nav-item" data-section="kontak" id="mobNavKontak">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+      </svg>
+      <span>Kontak</span>
+    </a>
+  </nav>
+
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
